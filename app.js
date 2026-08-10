@@ -9,11 +9,11 @@ function obtenerNumeros() {
     }
 
     return [numero1, numero2];
-
 }
 
 function mostrarResultado(valor) {
-    document.getElementById("resultado").innerText = "Resultado: " + valor;
+    document.getElementById("resultado").innerText =
+        "Resultado: " + valor;
 }
 
 function sumar() {
@@ -21,7 +21,7 @@ function sumar() {
     if (!numeros) return;
 
     const [a, b] = numeros;
-     mostrarResultado(a + b);    
+    mostrarResultado(a + b);
 }
 
 function restar() {
@@ -29,7 +29,7 @@ function restar() {
     if (!numeros) return;
 
     const [a, b] = numeros;
-    mostrarResultado(a - b);    
+    mostrarResultado(a - b);
 }
 
 function multiplicar() {
@@ -37,7 +37,7 @@ function multiplicar() {
     if (!numeros) return;
 
     const [a, b] = numeros;
-    mostrarResultado(a * b);    
+    mostrarResultado(a * b);
 }
 
 function dividir() {
@@ -58,12 +58,4 @@ function limpiar() {
     document.getElementById("numero1").value = "";
     document.getElementById("numero2").value = "";
     document.getElementById("resultado").innerText = "Resultado:";
-}
-    if (b === 0) {
-        document.getElementById("resultado").innerText =
-            "Error: no se puede dividir entre cero";
-    } else {
-        document.getElementById("resultado").innerText =
-            "Resultado: " + (a / b);
-    }
 }
