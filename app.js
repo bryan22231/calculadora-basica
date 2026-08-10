@@ -51,7 +51,7 @@ function limpiar() {
 }
     if (b === 0) {
         document.getElementById("resultado").innerText =
-            "No se puede dividir para cero";
+            "Error: no se puede dividir entre cero";
     } else {
         document.getElementById("resultado").innerText =
             "Resultado: " + (a / b);
