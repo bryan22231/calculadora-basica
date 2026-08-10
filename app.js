@@ -44,6 +44,11 @@ function dividir() {
 
     const [a, b] = numeros;
 
+function limpiar() {
+    document.getElementById("numero1").value = "";
+    document.getElementById("numero2").value = "";
+    document.getElementById("resultado").innerText = "Resultado:";
+}
     if (b === 0) {
         document.getElementById("resultado").innerText =
             "No se puede dividir para cero";
