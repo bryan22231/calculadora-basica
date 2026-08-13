@@ -53,6 +53,13 @@ function dividir() {
         mostrarResultado(a / b);
     }
 }
+function potencia() {
+    const numeros = obtenerNumeros();
+    if (!numeros) return;
+
+    const [a, b] = numeros;
+    mostrarResultado(Math.pow(a, b));
+}
 
 function limpiar() {
     document.getElementById("numero1").value = "";
